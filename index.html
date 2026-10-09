@@ -1,4 +1,6 @@
-<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Tabitha Quest | Disrupting the Pharma Status Quo</title>
@@ -74,7 +76,7 @@
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
         .clinical-glass {
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(20px);
         }
         .hero-gradient {
@@ -82,210 +84,446 @@
         }
         .no-line { border: none !important; }
         .tonal-shift { transition: background-color 0.3s ease; }
+        body.modal-open { overflow: hidden; }
     </style>
 </head>
 <body class="bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container font-body">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 clinical-glass shadow-sm shadow-primary/5"><div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4"><a class="flex items-center gap-3" href="#"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-white shadow-sm"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18h8"></path><path d="M3 22h18"></path><path d="M14 22a7 7 0 1 0 0-14h-1"></path><path d="M9 14h2"></path><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"></path><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"></path></svg></div><span class="font-headline font-bold text-xl tracking-tight text-primary">Tabitha Quest</span></a><div class="hidden md:flex items-center gap-8 font-label text-sm uppercase tracking-wider text-on-surface-variant font-semibold"><a class="hover:text-primary transition-colors text-primary font-semibold" href="#mission">Mission</a><a class="hover:text-primary transition-colors" href="#data">Impact &amp; Data</a><a class="hover:text-primary transition-colors" href="#pillars">Core Pillars</a><a class="hover:text-primary transition-colors" href="#leadership">Team</a></div><div class="flex items-center"><a class="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-primary text-white font-label text-sm font-semibold tracking-wide shadow-sm hover:bg-primary-container transition-all" href="https://www.tabithaquest.org/donate.html" rel="noopener noreferrer" target="_blank">Donate</a></div></div></nav>
+
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-40 clinical-glass shadow-sm shadow-primary/5">
+  <div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
+    <a class="flex items-center gap-3" href="#">
+      <div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-white shadow-sm">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M6 18h8"></path>
+          <path d="M3 22h18"></path>
+          <path d="M14 22a7 7 0 1 0 0-14h-1"></path>
+          <path d="M9 14h2"></path>
+          <path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"></path>
+          <path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"></path>
+        </svg>
+      </div>
+      <span class="font-headline font-bold text-xl tracking-tight text-primary">Tabitha Quest</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8 font-label text-sm uppercase tracking-wider text-on-surface-variant font-semibold">
+      <a class="hover:text-primary transition-colors text-primary font-semibold" href="#mission">Mission</a>
+      <a class="hover:text-primary transition-colors" href="#data">Impact &amp; Data</a>
+      <a class="hover:text-primary transition-colors" href="#pillars">Core Pillars</a>
+      <a class="hover:text-primary transition-colors" href="#leadership">Team</a>
+    </div>
+    <div class="flex items-center">
+      <a class="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-primary text-white font-label text-sm font-semibold tracking-wide shadow-sm hover:bg-primary-container transition-all" href="https://www.tabithaquest.org/donate.html" rel="noopener noreferrer" target="_blank">Donate</a>
+    </div>
+  </div>
+</nav>
+
 <main class="pt-16">
 <!-- Hero Section -->
-<section class="relative flex items-center overflow-hidden px-6 lg:px-8 bg-surface py-12"><div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center w-full py-6"><div class="lg:col-span-7 flex flex-col items-start space-y-6 z-10"><div class="space-y-4 max-w-2xl"><h1 class="font-headline font-extrabold text-4xl sm:text-5xl lg:text-6xl text-primary tracking-tight leading-[1.08]">Making Medicines <br class="hidden sm:inline"><span class="text-[#0070ba]">Accessible</span> and <br class="hidden sm:inline"><span class="text-[#0070ba]">Affordable.</span></h1><p class="font-body text-xl sm:text-2xl text-on-surface-variant font-normal leading-relaxed pt-2">A nonprofit building a new model to develop and manufacture life-saving medicines that patients and our healthcare system can afford.</p></div><div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto pt-2"><a class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-primary text-white font-label text-sm font-semibold tracking-wide shadow-md hover:bg-primary-container transition-all" href="#mission"><span class="">About Our Model</span><span class="material-symbols-outlined text-sm">arrow_forward</span></a></div></div><div class="lg:col-span-5 relative flex justify-center items-center"><div class="relative w-full max-w-lg lg:max-w-none"><div class="relative rounded-3xl overflow-hidden shadow-xl bg-white p-2 border border-slate-200/80"><div class="relative w-full h-[440px] sm:h-[480px] rounded-2xl overflow-hidden"><img alt="Doctor with patient" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT6HoaKJb_dUAqXeo7tthTYRYmF0ojK4FYLLkL0vY_TcpQIvEoL8YWgsOoi6YqLr1j4h5Mm0w0xgFwAdDdxJVzt76b1K3UjXM91DmuBo3NauWiYXvxnugUqoYqdaYxLc6QSnBd9cliJatXTBMK0zOHyKeRAmTgAViQxhWr1qvyiQDmNl07U76XgillQUKeTlb6lDZRjgZcpL79HSGGWS3nk0IzAKhdPyf-f1yeyjsWafFXcTmD-CWqvKhdoKjj5A2QgaA" style="object-position: 78% center;"><div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div></div></div></div></div></div></section>
-<!-- Stats Section (Asymmetric Bento) -->
-<section class="bg-surface-container-low px-6 py-16"><div class="max-w-7xl mx-auto" id="data"><div class="text-center max-w-3xl mx-auto mb-16"><h2 class="text-3xl lg:text-5xl font-headline font-bold text-primary tracking-tight">The Impact of High Cost Medicines</h2><p class="font-body text-lg text-on-surface-variant mt-4 leading-relaxed">High drug prices put life-saving medicines out of reach for patients and place an unsustainable burden on our healthcare system.</p></div><div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch"><div class="bg-surface-container-lowest p-10 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between hover:shadow-md transition-shadow"><div class="flex items-center justify-between mb-8"><span class="font-label text-xs font-bold text-secondary tracking-[0.2em] uppercase">Accessibility Crisis</span></div><div><div class="text-6xl font-headline font-extrabold text-primary tracking-tighter mb-4">57%</div><p class="font-body text-lg text-on-surface-variant leading-snug">Americans struggle to afford essential daily medications.</p></div><div class="pt-6 mt-8 border-t border-outline/5 text-xs font-label text-slate-400 font-medium">National Health Council Benchmark</div></div><div class="bg-primary text-white p-10 rounded-2xl shadow-xl border border-white/10 flex flex-col justify-between relative overflow-hidden"><div class="absolute -right-8 -bottom-8 w-44 h-44 bg-secondary/10 rounded-full blur-2xl"></div><div class="flex items-center justify-between mb-8 relative z-10"><span class="font-label text-xs font-bold text-secondary-fixed tracking-[0.2em] uppercase">Price Disparity</span></div><div class="relative z-10"><div class="text-7xl lg:text-8xl font-headline font-extrabold tracking-tighter text-white mb-4">4.4<span class="text-4xl text-secondary-fixed font-normal">×</span></div><p class="font-body text-xl text-primary-fixed-dim leading-relaxed">U.S. brand drug prices exceed other developed nations for identical essential medications.</p></div><div class="pt-6 mt-8 border-t border-white/10 text-xs font-label text-white/60 relative z-10 flex items-center justify-between"><span class="">RAND Corporation Comparison</span></div></div><div class="bg-surface-container-lowest p-10 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between hover:shadow-md transition-shadow"><div class="flex items-center justify-between mb-8"><span class="font-label text-xs font-bold text-secondary tracking-[0.2em] uppercase">Treatment Adherence</span></div><div><div class="text-6xl font-headline font-extrabold text-primary tracking-tighter mb-4">30%</div><p class="font-body text-lg text-on-surface-variant leading-snug">Patients skip doses or cut pills to make costly prescriptions last, risking severe health outcomes.</p></div><div class="pt-6 mt-8 border-t border-outline/5 text-xs font-label text-slate-400 font-medium">KFF Clinical Adherence Study</div></div></div></div></section>
-<!-- Mission Detail Section -->
-<section class="bg-surface px-6 overflow-hidden py-16"><div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center" id="mission"><div class="lg:col-span-6 relative"><h2 class="text-4xl lg:text-5xl font-headline font-bold text-primary tracking-tight mb-8 leading-tight">Nonprofit Capital for <br class=""><span class="text-secondary italic font-body font-normal">Affordable Medicines</span></h2><div class="space-y-6"><p class="font-body text-on-surface text-xl mb-4 leading-relaxed">Tabitha Quest was founded to make life-saving medicines accessible and affordable for patients and our healthcare system. We believe accessibility should be a core objective of drug development and integrated across development, manufacturing, and pricing.</p><p class="font-body text-on-surface-variant text-lg leading-relaxed">Our nonprofit-controlled structure combines philanthropic and other mission-driven capital with private investment to support drug development. Affordability shapes decisions from how medicines are financed and developed to how they are manufactured and ultimately priced. This structure allows an increasing share of the economics to be directed toward lower prices, broader patient access, domestic manufacturing, and the development of additional medicines.</p></div></div><div class="lg:col-span-6 grid grid-cols-2 gap-6"><div class="relative bg-white p-2 rounded-2xl border border-slate-200/80 shadow-lg"><img class="rounded-xl w-full h-72 object-cover" data-alt="Macro photography of pharmaceutical vials on a production line with clean white aesthetics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTIkUa3QvA6dOLt83nmlAL4CvVJ9vwXL6w6FY-X_-3GS2NBXaTB9hQlQZUBtaQ48-8Lr3yNHzKSxf6r15HWEcQJLkQgTxK6Cah_J7Hw0zucz2h3IdR7RcS-0doLIhNBurKHDSlZq7n_sG6MU9ZH-ZzWEeSM9ia1epwl8fnpifj7tpuMU24RrfAgWJGG5S-kb7YTXxo-M3sVZUywDWaWdTynxrfuZ_o7crmqu0dq7eEmkhojMoE2er3626VzCZLEbyZ0B4xDlXvNP4c"></div><div class="relative bg-white p-2 rounded-2xl border border-slate-200/80 shadow-lg mt-8"><img class="rounded-xl w-full h-80 object-cover" data-alt="Interior of a modern biotech facility with stainless steel tanks and glass partitions" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcb3mDudsc0ZKPODJz1dmvpPPSTjwwtm_i6cbxyU--rW1P8PQy1iUE-hbzJedZSiterILvO7BYDXDLFxwKYwmPLE1yxQzRePEL6PkIHfsWFZvmjqIiYvLs871jWmfPlkg4gM6KnS4YTN-OzPSbiKhAy4GDQCB5ACb2dfjh_-WS2yc-7984Tkygj3BXYEm1OGZ9QutqOo4dBpNnhij8sa37x0lBhK8kelJMl6E7B4Lk92Xd8eF1L7MjMJaX5Cj9bG97sjSuWelbu228"></div></div></div></section>
-<!-- Core Pillars Section -->
-<section class="bg-surface-container-low px-6 py-16"><div class="max-w-7xl mx-auto text-center mb-16" id="pillars"><h2 class="text-4xl lg:text-6xl font-headline font-extrabold text-primary tracking-tight">Our Core Pillars</h2></div><div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch"><div class="bg-surface-container-lowest p-10 rounded-2xl group hover:shadow-xl transition-all duration-500 flex flex-col justify-between border border-slate-200/80"><div class="flex flex-col items-start"><div class="flex items-center gap-4 mb-6"><div class="w-14 h-14 bg-primary/5 border border-primary/10 rounded-xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300"><span class="material-symbols-outlined text-3xl">health_and_safety</span></div><h3 class="text-2xl font-headline font-bold text-primary">Affordability &amp; Access</h3></div><p class="font-body text-base text-on-surface-variant leading-relaxed">Making life-saving medicines more affordable and accessible by building lower prices into how they are developed, manufactured, and brought to patients.</p></div></div><div class="bg-surface-container-lowest p-10 rounded-2xl group hover:shadow-xl transition-all duration-500 flex flex-col justify-between border border-slate-200/80"><div class="flex flex-col items-start"><div class="flex items-center gap-4 mb-6"><div class="w-14 h-14 bg-primary/5 border border-primary/10 rounded-xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300"><span class="material-symbols-outlined text-3xl">precision_manufacturing</span></div><h3 class="text-2xl font-headline font-bold text-primary">Domestic Biomanufacturing</h3></div><p class="font-body text-base text-on-surface-variant leading-relaxed">Building domestic biologics capacity that makes critical medicines on American soil to ensure supply chain integrity and rapid local scalability.</p></div></div><div class="bg-surface-container-lowest p-10 rounded-2xl group hover:shadow-xl transition-all duration-500 flex flex-col justify-between border border-slate-200/80"><div class="flex flex-col items-start"><div class="flex items-center gap-4 mb-6"><div class="w-14 h-14 bg-primary/5 border border-primary/10 rounded-xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300"><span class="material-symbols-outlined text-3xl">shield_with_heart</span></div><h3 class="text-2xl font-headline font-bold text-primary">National Preparedness</h3></div><p class="font-body text-base text-on-surface-variant leading-relaxed">Ensuring America's pharmaceutical infrastructure is ready to combat future biological threats and drug shortages with rapid, resilient surge capabilities.</p></div></div></div></section>
-<!-- Leadership & Team Section -->
-<!-- Interactive Bio Modal Dialog -->
-<!-- CTA Section -->
-<!-- Leadership & Advisory Section -->
-<section class="bg-surface px-6 py-16" id="leadership">
-<div class="max-w-7xl mx-auto">
-<div class="text-center max-w-3xl mx-auto mb-16">
-
-<h2 class="text-4xl lg:text-6xl font-headline font-extrabold text-primary tracking-tight mb-4">Leadership &amp; Advisors</h2>
-
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch mx-auto"><!-- David McKeon -->
-<div class="bg-surface-container-lowest rounded-2xl border border-slate-200/80 p-6 flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 group">
-<div class="flex flex-col items-start text-left w-full">
-<div class="w-full aspect-[4/5] mx-auto mb-4 rounded-xl overflow-hidden shadow-sm relative border border-slate-200">
-<img alt="David McKeon" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEupEyw308ojBltqKeOL1LaKWpij9RcxUs5LBR20CmPp4yrX_QMKVtS3GgIquhs10SuF7cXfsXYy2mTdh8NvQAdj-sErDtjjrNdR_yGUhBM1cXTqeQuO3tCHrmJnAMl17YA7rE-UWO23nnh7L67YsOVBbp0XMTHSDumBWqbwPJVEUrNPTg4Vg6V_jX5WUzJpP4E2SvbK_VO6hlj2LAkKNgWMbUuKTy0sMdf4t_wqz3emV1rTFShCjzyCdUl2kdfhbJw1w">
-</div>
-<h3 class="text-xl font-headline font-bold text-primary mb-1 text-left">David McKeon</h3>
-<p class="font-label text-sm text-secondary font-medium text-left mb-6">President</p>
-</div>
-<div class="w-full pt-0">
-<button class="w-full py-2.5 px-4 rounded-xl border border-primary/20 text-primary font-label text-xs font-semibold tracking-wide hover:bg-primary hover:text-white transition-colors flex items-center justify-center gap-2" onclick="openBioModal('david')" type="button">
-<span class="">Read Bio</span>
-<span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
-</div>
-</div>
-<!-- Ram Sasisekharan, PhD -->
-<div class="bg-surface-container-lowest rounded-2xl border border-slate-200/80 p-6 flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 group">
-<div class="flex flex-col items-start text-left w-full">
-<div class="w-full aspect-[4/5] mx-auto mb-4 rounded-xl overflow-hidden shadow-sm relative border border-slate-200">
-<img alt="Ram Sasisekharan, PhD" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcSpwLAmxu0BvNtsDUdSKhi-chrxdbHRdYL9eZqRCSUBTJV-FI6I1xHrV8Q76WwEsWYDL9XBXW6_c8kNnjaq8MUgV99p10ngezgsjSCO_Fyw680c7bkTaHSfQCC5uxvwlbrkkWyhyRWCYLPRCbS5NEQ9g3CnSkVWWeDg5HeZdemds8uxFa2IfTlm5zwPdB0k_PSrcEplqLoQfPOFM-i7mzJSYDFXHuAPtDqMNzpbT7bunb3Lv-JQwzOualrZ62oIW3Y2M">
-</div>
-<h3 class="text-xl font-headline font-bold text-primary mb-1 text-left">Ram Sasisekharan, PhD</h3>
-<p class="font-label text-sm text-secondary font-medium text-left mb-6">Scientific Advisor</p>
-</div>
-<div class="w-full pt-0">
-<button class="w-full py-2.5 px-4 rounded-xl border border-primary/20 text-primary font-label text-xs font-semibold tracking-wide hover:bg-primary hover:text-white transition-colors flex items-center justify-center gap-2" onclick="openBioModal('ram')" type="button">
-<span class="">Read Bio</span>
-<span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
-</div>
-</div>
-<!-- Anthony Barrueta -->
-<div class="bg-surface-container-lowest rounded-2xl border border-slate-200/80 p-6 flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 group">
-<div class="flex flex-col items-start text-left w-full">
-<div class="w-full aspect-[4/5] mx-auto mb-4 rounded-xl overflow-hidden shadow-sm relative border border-slate-200">
-<img alt="Anthony Barrueta" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3JSMvuZW9vd4BS-0gEXZp-t9JBJ5SjWu6bw2l7XbxrJGu_IgOaAOceVRrqTpZYKEgIe3V6gDvEkHjyBZ2j2AwrYm21SxcMzsm7gFLqBVqoZLAMWYFQPxTPH1rW4_DgNZQwDafeaGcSLJVmSwLMQz4Z5dJqx6r5ZhRF9OKXSS3982HX92yteU7CjsInwf5-ELzkSTbq20e7wEyd-GEaiF21ndAlAyn0RQUHLL3XSiM7HnSr9YQZhUjG-wI3L1Pdkq5Xtc">
-</div>
-<h3 class="text-xl font-headline font-bold text-primary mb-1 text-left">Anthony Barrueta</h3>
-<p class="font-label text-sm text-secondary font-medium text-left mb-6">Strategy and Policy Advisor</p>
-</div>
-<div class="w-full pt-0">
-<button class="w-full py-2.5 px-4 rounded-xl border border-primary/20 text-primary font-label text-xs font-semibold tracking-wide hover:bg-primary hover:text-white transition-colors flex items-center justify-center gap-2" onclick="openBioModal('tony')" type="button">
-<span class="">Read Bio</span>
-<span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
-</div>
-</div>
-<!-- Lee Hofrichter -->
-<div class="bg-surface-container-lowest rounded-2xl border border-slate-200/80 p-6 flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 group">
-<div class="flex flex-col items-start text-left w-full">
-<div class="w-full aspect-[4/5] mx-auto mb-4 rounded-xl overflow-hidden shadow-sm relative border border-slate-200">
-<img alt="Lee Hofrichter" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3Db0KcBDvfSx9p-d2p0uD1kGTovVKGh-BQBQ2_1forXlr-m9vEbgfbj5KoVnmlf0M0opLE-nQsTZ53_51E-b4A8IT5ohPe_ve8-bgt-MSfL2FTxBkLMbMUeODUd6oSZIdly32j7G5ehBOIp3LrZBBIVEx796eZ7tNGILXFLGPMeg0hHmIEmlVSb_jfbsypuT34iyZeaDTOQUI15vNihMnR91cM10Pw63QkRQlFPQeJEZrOUp8ccdTwm9AHP9XBzH9Gdw">
-</div>
-<h3 class="text-xl font-headline font-bold text-primary mb-1 text-left">Lee Hofrichter</h3>
-<p class="font-label text-sm text-secondary font-medium text-left mb-6">Growth and Revenue Advisor</p>
-</div>
-<div class="w-full pt-0">
-<button class="w-full py-2.5 px-4 rounded-xl border border-primary/20 text-primary font-label text-xs font-semibold tracking-wide hover:bg-primary hover:text-white transition-colors flex items-center justify-center gap-2" onclick="openBioModal('lee')" type="button">
-<span class="">Read Bio</span>
-<span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
-</div>
-</div></div>
-</div>
+<section class="relative flex items-center overflow-hidden px-6 lg:px-8 bg-surface py-12">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center w-full py-6">
+    <div class="lg:col-span-7 flex flex-col items-start space-y-6 z-10">
+      <div class="space-y-4 max-w-2xl">
+        <h1 class="font-headline font-extrabold text-4xl sm:text-5xl lg:text-6xl text-primary tracking-tight leading-[1.08]">
+          Making Medicines <br class="hidden sm:inline">
+          <span class="text-[#0070ba]">Accessible</span> and <br class="hidden sm:inline">
+          <span class="text-[#0070ba]">Affordable.</span>
+        </h1>
+        <p class="font-body text-xl sm:text-2xl text-on-surface-variant font-normal leading-relaxed pt-2">
+          A nonprofit building a new model to develop and manufacture life-saving medicines that patients and our healthcare system can afford.
+        </p>
+      </div>
+      <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto pt-2">
+        <a class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-primary text-white font-label text-sm font-semibold tracking-wide shadow-md hover:bg-primary-container transition-all" href="#mission">
+          <span>About Our Model</span>
+          <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+    <div class="lg:col-span-5 relative flex justify-center items-center">
+      <div class="relative w-full max-w-lg lg:max-w-none">
+        <div class="relative rounded-3xl overflow-hidden shadow-xl bg-white p-2 border border-slate-200/80">
+          <div class="relative w-full h-[440px] sm:h-[480px] rounded-2xl overflow-hidden">
+            <img alt="Doctor with pediatric patient" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT6HoaKJb_dUAqXeo7tthTYRYmF0ojK4FYLLkL0vY_TcpQIvEoL8YWgsOoi6YqLr1j4h5Mm0w0xgFwAdDdxJVzt76b1K3UjXM91DmuBo3NauWiYXvxnugUqoYqdaYxLc6QSnBd9cliJatXTBMK0zOHyKeRAmTgAViQxhWr1qvyiQDmNl07U76XgillQUKeTlb6lDZRjgZcpL79HSGGWS3nk0IzAKhdPyf-f1yeyjsWafFXcTmD-CWqvKhdoKjj5A2QgaA" style="object-position: 78% center;">
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Interactive Bio Modal Dialog -->
-<div aria-labelledby="modalName" aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 transition-opacity duration-300 opacity-0 pointer-events-none" id="bioModal" role="dialog">
-<!-- Modal Backdrop -->
-<div class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity" onclick="closeBioModal()"></div>
-<!-- Modal Content Box -->
-<div class="relative bg-surface-container-lowest rounded-3xl max-w-2xl w-full p-6 sm:p-10 shadow-2xl border border-slate-200/80 z-10 max-h-[90vh] overflow-y-auto transform transition-transform duration-300 scale-95">
-<button aria-label="Close dialog" class="absolute top-5 right-5 w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface flex items-center justify-center transition-colors" onclick="closeBioModal()">
-<span class="material-symbols-outlined text-xl">close</span>
-</button>
-<div class="flex flex-col sm:flex-row gap-6 items-start mb-6">
-<div class="w-24 sm:w-28 aspect-[4/5] rounded-xl overflow-hidden shrink-0 border-2 border-slate-200 shadow-md">
-<img alt="Leader" class="w-full h-full object-cover object-top" id="modalImage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3Db0KcBDvfSx9p-d2p0uD1kGTovVKGh-BQBQ2_1forXlr-m9vEbgfbj5KoVnmlf0M0opLE-nQsTZ53_51E-b4A8IT5ohPe_ve8-bgt-MSfL2FTxBkLMbMUeODUd6oSZIdly32j7G5ehBOIp3LrZBBIVEx796eZ7tNGILXFLGPMeg0hHmIEmlVSb_jfbsypuT34iyZeaDTOQUI15vNihMnR91cM10Pw63QkRQlFPQeJEZrOUp8ccdTwm9AHP9XBzH9Gdw">
+
+<!-- Stats Section (Asymmetric Bento) -->
+<section class="bg-surface-container-low px-6 py-16" id="data">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-3xl lg:text-5xl font-headline font-bold text-primary tracking-tight">The Impact of High Cost Medicines</h2>
+      <p class="font-body text-lg text-on-surface-variant mt-4 leading-relaxed">High drug prices put life-saving medicines out of reach for patients and place an unsustainable burden on our healthcare system.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+      <div class="bg-surface-container-lowest p-10 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between hover:shadow-md transition-shadow">
+        <div class="flex items-center justify-between mb-8">
+          <span class="font-label text-xs font-bold text-secondary tracking-[0.2em] uppercase">Accessibility Crisis</span>
+        </div>
+        <div>
+          <div class="text-6xl font-headline font-extrabold text-primary tracking-tighter mb-4">57%</div>
+          <p class="font-body text-lg text-on-surface-variant leading-snug">Americans struggle to afford essential daily medications.</p>
+        </div>
+        <div class="pt-6 mt-8 border-t border-outline/5 text-xs font-label text-slate-400 font-medium">National Health Council Benchmark</div>
+      </div>
+      <div class="bg-primary text-white p-10 rounded-2xl shadow-xl border border-white/10 flex flex-col justify-between relative overflow-hidden">
+        <div class="absolute -right-8 -bottom-8 w-44 h-44 bg-secondary/10 rounded-full blur-2xl"></div>
+        <div class="flex items-center justify-between mb-8 relative z-10">
+          <span class="font-label text-xs font-bold text-secondary-fixed tracking-[0.2em] uppercase">Price Disparity</span>
+        </div>
+        <div class="relative z-10">
+          <div class="text-7xl lg:text-8xl font-headline font-extrabold tracking-tighter text-white mb-4">4.4<span class="text-4xl text-secondary-fixed font-normal">×</span></div>
+          <p class="font-body text-xl text-primary-fixed-dim leading-relaxed">U.S. brand drug prices exceed other developed nations for identical essential medications.</p>
+        </div>
+        <div class="pt-6 mt-8 border-t border-white/10 text-xs font-label text-white/60 relative z-10 flex items-center justify-between">
+          <span>RAND Corporation Comparison</span>
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest p-10 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between hover:shadow-md transition-shadow">
+        <div class="flex items-center justify-between mb-8">
+          <span class="font-label text-xs font-bold text-secondary tracking-[0.2em] uppercase">Treatment Adherence</span>
+        </div>
+        <div>
+          <div class="text-6xl font-headline font-extrabold text-primary tracking-tighter mb-4">30%</div>
+          <p class="font-body text-lg text-on-surface-variant leading-snug">Patients skip doses or cut pills to make costly prescriptions last, risking severe health outcomes.</p>
+        </div>
+        <div class="pt-6 mt-8 border-t border-outline/5 text-xs font-label text-slate-400 font-medium">KFF Clinical Adherence Study</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mission Detail Section -->
+<section class="bg-surface px-6 overflow-hidden py-16" id="mission">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+    <div class="lg:col-span-6 relative">
+      <h2 class="text-4xl lg:text-5xl font-headline font-bold text-primary tracking-tight mb-8 leading-tight">
+        Nonprofit Capital for <br><span class="text-secondary italic font-body font-normal">Affordable Medicines</span>
+      </h2>
+      <div class="space-y-6">
+        <p class="font-body text-on-surface text-xl mb-4 leading-relaxed">Tabitha Quest was founded to make life-saving medicines accessible and affordable for patients and our healthcare system. We believe accessibility should be a core objective of drug development and integrated across development, manufacturing, and pricing.</p>
+        <p class="font-body text-on-surface-variant text-lg leading-relaxed">Our nonprofit-controlled structure combines philanthropic and other mission-driven capital with private investment to support drug development. Affordability shapes decisions from how medicines are financed and developed to how they are manufactured and ultimately priced. This structure allows an increasing share of the economics to be directed toward lower prices, broader patient access, domestic manufacturing, and the development of additional medicines.</p>
+      </div>
+    </div>
+    <div class="lg:col-span-6 grid grid-cols-2 gap-6">
+      <div class="relative bg-white p-2 rounded-2xl border border-slate-200/80 shadow-lg">
+        <img alt="Pharmaceutical vials on production line" class="rounded-xl w-full h-72 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTIkUa3QvA6dOLt83nmlAL4CvVJ9vwXL6w6FY-X_-3GS2NBXaTB9hQlQZUBtaQ48-8Lr3yNHzKSxf6r15HWEcQJLkQgTxK6Cah_J7Hw0zucz2h3IdR7RcS-0doLIhNBurKHDSlZq7n_sG6MU9ZH-ZzWEeSM9ia1epwl8fnpifj7tpuMU24RrfAgWJGG5S-kb7YTXxo-M3sVZUywDWaWdTynxrfuZ_o7crmqu0dq7eEmkhojMoE2er3626VzCZLEbyZ0B4xDlXvNP4c">
+      </div>
+      <div class="relative bg-white p-2 rounded-2xl border border-slate-200/80 shadow-lg mt-8">
+        <img alt="Modern biomanufacturing facility cleanroom" class="rounded-xl w-full h-80 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcb3mDudsc0ZKPODJz1dmvpPPSTjwwtm_i6cbxyU--rW1P8PQy1iUE-hbzJedZSiterILvO7BYDXDLFxwKYwmPLE1yxQzRePEL6PkIHfsWFZvmjqIiYvLs871jWmfPlkg4gM6KnS4YTN-OzPSbiKhAy4GDQCB5ACb2dfjh_-WS2yc-7984Tkygj3BXYEm1OGZ9QutqOo4dBpNnhij8sa37x0lBhK8kelJMl6E7B4Lk92Xd8eF1L7MjMJaX5Cj9bG97sjSuWelbu228">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Core Pillars Section -->
+<section class="bg-surface-container-low px-6 py-16" id="pillars">
+  <div class="max-w-7xl mx-auto text-center mb-16">
+    <h2 class="text-4xl lg:text-6xl font-headline font-extrabold text-primary tracking-tight">Our Core Pillars</h2>
+  </div>
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+    <div class="bg-surface-container-lowest p-10 rounded-2xl group hover:shadow-xl transition-all duration-500 flex flex-col justify-between border border-slate-200/80">
+      <div class="flex flex-col items-start">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-14 h-14 bg-primary/5 border border-primary/10 rounded-xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+            <span class="material-symbols-outlined text-3xl">health_and_safety</span>
+          </div>
+          <h3 class="text-2xl font-headline font-bold text-primary">Affordability &amp; Access</h3>
+        </div>
+        <p class="font-body text-base text-on-surface-variant leading-relaxed">Making life-saving medicines more affordable and accessible by building lower prices into how they are developed, manufactured, and brought to patients.</p>
+      </div>
+    </div>
+    <div class="bg-surface-container-lowest p-10 rounded-2xl group hover:shadow-xl transition-all duration-500 flex flex-col justify-between border border-slate-200/80">
+      <div class="flex flex-col items-start">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-14 h-14 bg-primary/5 border border-primary/10 rounded-xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+            <span class="material-symbols-outlined text-3xl">precision_manufacturing</span>
+          </div>
+          <h3 class="text-2xl font-headline font-bold text-primary">Domestic Biomanufacturing</h3>
+        </div>
+        <p class="font-body text-base text-on-surface-variant leading-relaxed">Building domestic biologics capacity that makes critical medicines on American soil to ensure supply chain integrity and rapid local scalability.</p>
+      </div>
+    </div>
+    <div class="bg-surface-container-lowest p-10 rounded-2xl group hover:shadow-xl transition-all duration-500 flex flex-col justify-between border border-slate-200/80">
+      <div class="flex flex-col items-start">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-14 h-14 bg-primary/5 border border-primary/10 rounded-xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+            <span class="material-symbols-outlined text-3xl">shield_with_heart</span>
+          </div>
+          <h3 class="text-2xl font-headline font-bold text-primary">National Preparedness</h3>
+        </div>
+        <p class="font-body text-base text-on-surface-variant leading-relaxed">Ensuring America's pharmaceutical infrastructure is ready to combat future biological threats and drug shortages with rapid, resilient surge capabilities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Leadership & Advisors Section -->
+<section class="bg-surface px-6 py-16" id="leadership">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-4xl lg:text-6xl font-headline font-extrabold text-primary tracking-tight mb-4">Leadership &amp; Advisors</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch mx-auto">
+      
+      <!-- David McKeon Card -->
+      <div class="bg-surface-container-lowest rounded-2xl border border-slate-200/80 p-6 flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 group">
+        <div class="flex flex-col items-start text-left w-full">
+          <div class="w-full aspect-[4/5] mx-auto mb-4 rounded-xl overflow-hidden shadow-sm relative border border-slate-200">
+            <img alt="David McKeon" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEupEyw308ojBltqKeOL1LaKWpij9RcxUs5LBR20CmPp4yrX_QMKVtS3GgIquhs10SuF7cXfsXYy2mTdh8NvQAdj-sErDtjjrNdR_yGUhBM1cXTqeQuO3tCHrmJnAMl17YA7rE-UWO23nnh7L67YsOVBbp0XMTHSDumBWqbwPJVEUrNPTg4Vg6V_jX5WUzJpP4E2SvbK_VO6hlj2LAkKNgWMbUuKTy0sMdf4t_wqz3emV1rTFShCjzyCdUl2kdfhbJw1w">
+          </div>
+          <h3 class="text-xl font-headline font-bold text-primary mb-1 text-left">David McKeon</h3>
+          <p class="font-label text-sm text-secondary font-medium text-left mb-6">President</p>
+        </div>
+        <div class="w-full pt-0">
+          <button class="w-full py-2.5 px-4 rounded-xl border border-primary/20 text-primary font-label text-xs font-semibold tracking-wide hover:bg-primary hover:text-white transition-colors flex items-center justify-center gap-2 cursor-pointer" onclick="openBioModal('david')" type="button">
+            <span>Read Bio</span>
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Ram Sasisekharan, PhD Card -->
+      <div class="bg-surface-container-lowest rounded-2xl border border-slate-200/80 p-6 flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 group">
+        <div class="flex flex-col items-start text-left w-full">
+          <div class="w-full aspect-[4/5] mx-auto mb-4 rounded-xl overflow-hidden shadow-sm relative border border-slate-200">
+            <img alt="Ram Sasisekharan, PhD" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcSpwLAmxu0BvNtsDUdSKhi-chrxdbHRdYL9eZqRCSUBTJV-FI6I1xHrV8Q76WwEsWYDL9XBXW6_c8kNnjaq8MUgV99p10ngezgsjSCO_Fyw680c7bkTaHSfQCC5uxvwlbrkkWyhyRWCYLPRCbS5NEQ9g3CnSkVWWeDg5HeZdemds8uxFa2IfTlm5zwPdB0k_PSrcEplqLoQfPOFM-i7mzJSYDFXHuAPtDqMNzpbT7bunb3Lv-JQwzOualrZ62oIW3Y2M">
+          </div>
+          <h3 class="text-xl font-headline font-bold text-primary mb-1 text-left">Ram Sasisekharan, PhD</h3>
+          <p class="font-label text-sm text-secondary font-medium text-left mb-6">Scientific Advisor</p>
+        </div>
+        <div class="w-full pt-0">
+          <button class="w-full py-2.5 px-4 rounded-xl border border-primary/20 text-primary font-label text-xs font-semibold tracking-wide hover:bg-primary hover:text-white transition-colors flex items-center justify-center gap-2 cursor-pointer" onclick="openBioModal('ram')" type="button">
+            <span>Read Bio</span>
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Anthony Barrueta Card -->
+      <div class="bg-surface-container-lowest rounded-2xl border border-slate-200/80 p-6 flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 group">
+        <div class="flex flex-col items-start text-left w-full">
+          <div class="w-full aspect-[4/5] mx-auto mb-4 rounded-xl overflow-hidden shadow-sm relative border border-slate-200">
+            <img alt="Anthony Barrueta" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3JSMvuZW9vd4BS-0gEXZp-t9JBJ5SjWu6bw2l7XbxrJGu_IgOaAOceVRrqTpZYKEgIe3V6gDvEkHjyBZ2j2AwrYm21SxcMzsm7gFLqBVqoZLAMWYFQPxTPH1rW4_DgNZQwDafeaGcSLJVmSwLMQz4Z5dJqx6r5ZhRF9OKXSS3982HX92yteU7CjsInwf5-ELzkSTbq20e7wEyd-GEaiF21ndAlAyn0RQUHLL3XSiM7HnSr9YQZhUjG-wI3L1Pdkq5Xtc">
+          </div>
+          <h3 class="text-xl font-headline font-bold text-primary mb-1 text-left">Anthony Barrueta</h3>
+          <p class="font-label text-sm text-secondary font-medium text-left mb-6">Strategy and Policy Advisor</p>
+        </div>
+        <div class="w-full pt-0">
+          <button class="w-full py-2.5 px-4 rounded-xl border border-primary/20 text-primary font-label text-xs font-semibold tracking-wide hover:bg-primary hover:text-white transition-colors flex items-center justify-center gap-2 cursor-pointer" onclick="openBioModal('tony')" type="button">
+            <span>Read Bio</span>
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Lee Hofrichter Card -->
+      <div class="bg-surface-container-lowest rounded-2xl border border-slate-200/80 p-6 flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 group">
+        <div class="flex flex-col items-start text-left w-full">
+          <div class="w-full aspect-[4/5] mx-auto mb-4 rounded-xl overflow-hidden shadow-sm relative border border-slate-200">
+            <img alt="Lee Hofrichter" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3Db0KcBDvfSx9p-d2p0uD1kGTovVKGh-BQBQ2_1forXlr-m9vEbgfbj5KoVnmlf0M0opLE-nQsTZ53_51E-b4A8IT5ohPe_ve8-bgt-MSfL2FTxBkLMbMUeODUd6oSZIdly32j7G5ehBOIp3LrZBBIVEx796eZ7tNGILXFLGPMeg0hHmIEmlVSb_jfbsypuT34iyZeaDTOQUI15vNihMnR91cM10Pw63QkRQlFPQeJEZrOUp8ccdTwm9AHP9XBzH9Gdw">
+          </div>
+          <h3 class="text-xl font-headline font-bold text-primary mb-1 text-left">Lee Hofrichter</h3>
+          <p class="font-label text-sm text-secondary font-medium text-left mb-6">Growth and Revenue Advisor</p>
+        </div>
+        <div class="w-full pt-0">
+          <button class="w-full py-2.5 px-4 rounded-xl border border-primary/20 text-primary font-label text-xs font-semibold tracking-wide hover:bg-primary hover:text-white transition-colors flex items-center justify-center gap-2 cursor-pointer" onclick="openBioModal('lee')" type="button">
+            <span>Read Bio</span>
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Pop-up Bio Modal (Self-Contained & Accessible) -->
+<div aria-hidden="true" aria-labelledby="modalName" aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 transition-all duration-200 opacity-0 pointer-events-none" id="bioModal" role="dialog">
+  <!-- Backdrop (Click outside to close) -->
+  <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity" onclick="closeBioModal()"></div>
+  
+  <!-- Modal Dialog Card -->
+  <div class="relative bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-10 shadow-2xl border border-slate-200/90 z-10 max-h-[88vh] overflow-y-auto transform transition-all duration-200 scale-95 flex flex-col">
+    <!-- Close icon button -->
+    <button aria-label="Close biography dialog" class="absolute top-5 right-5 w-10 h-10 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center transition-colors cursor-pointer" onclick="closeBioModal()" type="button">
+      <span class="material-symbols-outlined text-xl">close</span>
+    </button>
+    
+    <!-- Leader Header with Portrait and Title -->
+    <div class="flex flex-col sm:flex-row gap-6 items-start mb-6 pr-8">
+      <div class="w-24 sm:w-28 aspect-[4/5] rounded-xl overflow-hidden shrink-0 border-2 border-slate-200 shadow-md bg-slate-50">
+        <img alt="Portrait" class="w-full h-full object-cover object-top" id="modalImage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEupEyw308ojBltqKeOL1LaKWpij9RcxUs5LBR20CmPp4yrX_QMKVtS3GgIquhs10SuF7cXfsXYy2mTdh8NvQAdj-sErDtjjrNdR_yGUhBM1cXTqeQuO3tCHrmJnAMl17YA7rE-UWO23nnh7L67YsOVBbp0XMTHSDumBWqbwPJVEUrNPTg4Vg6V_jX5WUzJpP4E2SvbK_VO6hlj2LAkKNgWMbUuKTy0sMdf4t_wqz3emV1rTFShCjzyCdUl2kdfhbJw1w">
+      </div>
+      <div class="flex flex-col justify-center pt-1">
+        <span class="font-label text-xs font-bold text-secondary uppercase tracking-widest mb-1.5" id="modalDepartment">Leadership</span>
+        <h3 class="text-2xl sm:text-3xl font-headline font-bold text-primary leading-tight" id="modalName">David McKeon</h3>
+        <p class="font-label text-sm sm:text-base text-slate-600 font-semibold mt-1" id="modalTitle">President</p>
+      </div>
+    </div>
+    
+    <!-- Biography Body -->
+    <div class="border-t border-slate-100 pt-6 flex-1">
+      <h4 class="font-label text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Biography</h4>
+      <div class="space-y-4 font-body text-base sm:text-lg text-slate-700 leading-relaxed" id="modalBio"></div>
+    </div>
+    
+    <!-- Footer Close Action -->
+    <div class="mt-8 pt-6 border-t border-slate-100 flex justify-end">
+      <button class="px-6 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-primary font-label text-sm font-semibold transition-colors cursor-pointer" onclick="closeBioModal()" type="button">
+        Close
+      </button>
+    </div>
+  </div>
 </div>
-<div class="flex flex-col justify-center pt-1">
-<span class="font-label text-xs font-bold text-secondary uppercase tracking-widest mb-1.5" id="modalDepartment">Advisory Board</span>
-<h3 class="text-2xl sm:text-3xl font-headline font-bold text-primary leading-tight" id="modalName">Lee Hofrichter</h3>
-<p class="font-label text-sm sm:text-base text-on-surface-variant font-semibold mt-1" id="modalTitle">Growth and Revenue Advisor</p>
-</div>
-</div>
-<div class="border-t border-slate-100 pt-6">
-<h4 class="font-label text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Executive Biography</h4>
-<div class="space-y-4 font-body text-base sm:text-lg text-on-surface-variant leading-relaxed" id="modalBio"><p class="">Lee Hofrichter brings more than 15 years of nonprofit development experience, including extensive work in healthcare philanthropy as a strategic consultant with CCS Fundraising, one of the nation's leading development consulting firms. Lee has led fundraising strategy and execution of a three-year, $100M campaign for an innovative cancer research foundation, and supported major gifts and campaign work for leading hospital systems and academic medical centers. He also served as Vice President of Development at YouthBuild Global, where he rebuilt the organization's development function and grew revenue across individual, corporate, foundation, and government funding sources. Lee holds the Certified Fund Raising Executive (CFRE) credential and an MBA from NYU Stern School of Business, with specializations in Strategy, Corporate Finance, and Social Innovation &amp; Impact.</p></div>
-</div>
-<div class="mt-8 pt-6 border-t border-slate-100 flex justify-end">
-<button class="px-6 py-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-primary font-label text-sm font-semibold transition-colors" onclick="closeBioModal()">
-Close
-</button>
-</div>
-</div>
-</div><section class="py-28 px-6"><div class="max-w-5xl mx-auto hero-gradient rounded-3xl text-center relative overflow-hidden shadow-2xl border border-white/10 p-10"><div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div><div class="absolute bottom-0 left-0 w-72 h-72 bg-secondary/15 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div><div class="relative z-10 max-w-3xl mx-auto"><h2 class="text-4xl lg:text-5xl font-headline font-extrabold text-white mb-6 tracking-tight leading-tight">Join the mission for <br>affordable medicines</h2><p class="text-primary-fixed-dim text-xl font-body max-w-2xl mx-auto mb-10 leading-relaxed font-normal">Help us provide access to new medicines that serve the public interest. Your partnership and support accelerate our progress.</p><div class="flex flex-col sm:flex-row gap-4 justify-center items-center"><a class="w-full sm:w-auto inline-flex items-center justify-center px-9 py-4 rounded-lg bg-white text-primary font-label font-bold text-sm tracking-wide shadow-lg hover:bg-slate-100 transition-colors" href="https://www.tabithaquest.org/donate.html">Support Tabitha Quest</a><a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-9 py-4 rounded-lg border border-white/30 text-white font-label font-bold text-sm tracking-wide hover:bg-white/10 transition-colors" href="mailto:dmckeon@tabithaquest.org"><span class="">Partner With Us</span><span class="material-symbols-outlined text-sm">arrow_forward</span></a></div></div></div></section>
+
+<!-- CTA Section -->
+<section class="py-28 px-6">
+  <div class="max-w-5xl mx-auto hero-gradient rounded-3xl text-center relative overflow-hidden shadow-2xl border border-white/10 p-10">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+    <div class="absolute bottom-0 left-0 w-72 h-72 bg-secondary/15 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+    <div class="relative z-10 max-w-3xl mx-auto">
+      <h2 class="text-4xl lg:text-5xl font-headline font-extrabold text-white mb-6 tracking-tight leading-tight">Join the mission for <br>affordable medicines</h2>
+      <p class="text-primary-fixed-dim text-xl font-body max-w-2xl mx-auto mb-10 leading-relaxed font-normal">Help us provide access to new medicines that serve the public interest. Your partnership and support accelerate our progress.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a class="w-full sm:w-auto inline-flex items-center justify-center px-9 py-4 rounded-lg bg-white text-primary font-label font-bold text-sm tracking-wide shadow-lg hover:bg-slate-100 transition-colors" href="https://www.tabithaquest.org/donate.html">Support Tabitha Quest</a>
+        <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-9 py-4 rounded-lg border border-white/30 text-white font-label font-bold text-sm tracking-wide hover:bg-white/10 transition-colors" href="mailto:dmckeon@tabithaquest.org">
+          <span>Partner With Us</span>
+          <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
+
 <!-- Footer -->
-<footer class="bg-slate-50 border-t border-outline/5 py-20 px-8"><div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 flex flex-col md:flex-row items-start md:items-center justify-between gap-8"><div class="space-y-2"><div class="font-headline font-bold text-xl text-primary">Tabitha Quest</div><p class="font-body text-sm text-on-surface-variant max-w-sm">Disrupting drug development for a more affordable America.</p></div><div class="flex flex-wrap gap-8 font-label text-xs uppercase tracking-wider font-semibold"><a class="text-on-surface-variant hover:text-primary transition-colors" href="#mission">Mission</a><a class="text-on-surface-variant hover:text-primary transition-colors" href="#data">Impact &amp; Data</a><a class="text-on-surface-variant hover:text-primary transition-colors" href="#pillars">Core Pillars</a><a class="text-on-surface-variant hover:text-primary transition-colors" href="#leadership">Team</a><a class="text-on-surface-variant hover:text-primary transition-colors" href="https://www.tabithaquest.org/donate.html">Support</a></div><div class="font-label text-xs uppercase tracking-wider text-slate-400 font-medium">© 2026 TABITHA QUEST. ALL RIGHTS RESERVED.</div></div></footer>
-<!-- Modal Logic Script -->
+<footer class="bg-slate-50 border-t border-outline/5 py-20 px-8">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+    <div class="space-y-2">
+      <div class="font-headline font-bold text-xl text-primary">Tabitha Quest</div>
+      <p class="font-body text-sm text-on-surface-variant max-w-sm">Disrupting drug development for a more affordable America.</p>
+    </div>
+    <div class="flex flex-wrap gap-8 font-label text-xs uppercase tracking-wider font-semibold">
+      <a class="text-on-surface-variant hover:text-primary transition-colors" href="#mission">Mission</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors" href="#data">Impact &amp; Data</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors" href="#pillars">Core Pillars</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors" href="#leadership">Team</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors" href="https://www.tabithaquest.org/donate.html">Support</a>
+    </div>
+    <div class="font-label text-xs uppercase tracking-wider text-slate-400 font-medium">© 2026 TABITHA QUEST. ALL RIGHTS RESERVED.</div>
+  </div>
+</footer>
+
+<!-- Modal JavaScript Logic -->
 <script>
-  const teamData = {
-    elena: {
-      name: "Dr. Elena Rostova",
-      title: "Chief Executive Officer & Co-Founder",
+  const teamBios = {
+    david: {
+      name: "David McKeon",
+      title: "President",
       department: "Executive Leadership",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDrC3NTJiT8POspFMrgSUvYvXphdexRFwWVWipLagb7Tl64O8RKgvhLZz_T8Mk8sCYoTI_Rn-s-OxlqKjJbCklGHI8hckYYZ7hN1MRYWHrWJqU5JjVLA5p6cTWVSq53ihvjhoI_tYgJIjC3HWHIuwSxY5wliHbwbTUUwB5eTcGAktPovxHg1ovbqpSrhg1ZdvsWY0cUNty-BgisXJrX_JtgGaBqjWagvrY-_tfLVD56izEBbnQPAwHNVA",
-      bio: [
-        "Dr. Elena Rostova brings over fifteen years of healthcare policy, commercial strategy, and therapeutic translation experience to Tabitha Quest. Prior to co-founding the organization, she led national access initiatives across several prominent biotech organizations and advised federal working groups on equitable drug pricing frameworks.",
-        "Throughout her career, Dr. Rostova has championed the convergence of philanthropic and venture models to decouple therapeutic discovery costs from patient sticker prices. Her visionary leadership ensures Tabitha Quest maintains institutional rigor while safeguarding its public-interest charter.",
-        "She holds a PhD in Health Economics and Policy from Johns Hopkins University and an MS in Biostatistics from Columbia University."
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBEupEyw308ojBltqKeOL1LaKWpij9RcxUs5LBR20CmPp4yrX_QMKVtS3GgIquhs10SuF7cXfsXYy2mTdh8NvQAdj-sErDtjjrNdR_yGUhBM1cXTqeQuO3tCHrmJnAMl17YA7rE-UWO23nnh7L67YsOVBbp0XMTHSDumBWqbwPJVEUrNPTg4Vg6V_jX5WUzJpP4E2SvbK_VO6hlj2LAkKNgWMbUuKTy0sMdf4t_wqz3emV1rTFShCjzyCdUl2kdfhbJw1w",
+      paragraphs: [
+        "David McKeon serves as the President of Tabitha Quest, leading the organization's strategic vision to create a new nonprofit paradigm for developing, manufacturing, and distributing essential biopharmaceuticals.",
+        "With deep expertise spanning nonprofit executive leadership, capital allocation, healthcare innovation, and mission-driven development, David guides Tabitha Quest in bridging philanthropic capital with sustainable biomanufacturing solutions.",
+        "Prior to Tabitha Quest, David held senior leadership roles across innovative medical research organizations and impact-focused ventures, spearheading complex initiatives to eliminate structural barriers that prevent patients from accessing critical therapies. He is dedicated to transforming national healthcare infrastructure and establishing biopharmaceutical resilience for patients across the United States."
       ]
     },
-    marcus: {
-      name: "Dr. Marcus Vance, MD",
-      title: "Chief Medical Officer & Head of Clinical Strategy",
-      department: "Clinical Governance",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDErpATm3uiCfn2kW3XruTxrnbAAVY0cL_p2xJ2rEO83zjPBrEjnGHASYiU8WxbcNb-K7OuxuO_xT7hvg9VzhKyL7cYCJGNZH7zsLNtXgcS0d24Ifqkl_FkcNw0z94FDI5VYbVJwVtipCnfM8qd8M-Ombj2y6XvxSzJAwowZxtLq_8EtwcXOnBY91bgs9TvvmjmgPPh6Ah2ED5nOOG0O7SfBHRNWky1Jp3kK03Go2usRS8Tv3yGMOj9vQ",
-      bio: [
-        "Dr. Marcus Vance is a board-certified internal medicine physician and clinical researcher with extensive leadership across major academic medical centers and hospital networks. His firsthand clinical work treating patients navigating catastrophic prescription costs inspired his transition into public-interest therapeutic development.",
-        "At Tabitha Quest, Dr. Vance oversees clinical trial governance, protocol safety, and critical shortages mitigation. He actively partners with regional health systems and federal biosecurity entities to ensure domestic stockpiles and essential hospital biologics remain consistently stocked and reasonably priced.",
-        "Dr. Vance received his MD from the Harvard Medical School and completed his residency and fellowship in Internal Medicine at Massachusetts General Hospital."
+    ram: {
+      name: "Ram Sasisekharan, PhD",
+      title: "Scientific Advisor",
+      department: "Scientific Advisory",
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAcSpwLAmxu0BvNtsDUdSKhi-chrxdbHRdYL9eZqRCSUBTJV-FI6I1xHrV8Q76WwEsWYDL9XBXW6_c8kNnjaq8MUgV99p10ngezgsjSCO_Fyw680c7bkTaHSfQCC5uxvwlbrkkWyhyRWCYLPRCbS5NEQ9g3CnSkVWWeDg5HeZdemds8uxFa2IfTlm5zwPdB0k_PSrcEplqLoQfPOFM-i7mzJSYDFXHuAPtDqMNzpbT7bunb3Lv-JQwzOualrZ62oIW3Y2M",
+      paragraphs: [
+        "Ram Sasisekharan has been a professor of Biological Engineering at MIT since 1996 and is now the Alfred H. Caspary Professor of Biological Engineering and Health Sciences and Technology. He was the Edward Hood Taplin Professor of Health Sciences & Technology and Biological Engineering and Director of Harvard-MIT Division of Health Sciences and Technology from 2008-2013. He was also lead Investigator for the MIT-Skoltech Biomedical Engineering Center, and a principal investigator in the Infectious Diseases Interdisciplinary Research Group of the SMART Centre in Singapore. Dr. Sasisekharan has published over 190 manuscripts and filed 90 United States patents (or applications).",
+        "Dr. Sasisekharan has won numerous awards. These honors include prizes from both the Beckman Foundation and Burroughs Wellcome Trust Young Investigator, as well as his receipt of the Princess Chulabhorn Gold Medal in 2007. In 2009 he was elected Fellow to the American Institute for Medical and Biological Engineering (AIMBE) and in 2010, he recieved the U.S National Institutes of General Medical Sciences MERIT Award. In 2014, he was elected Fellow of the U.S National Academy of Inventors. He was awarded the Aligent Technologies ”Thought Leader” Award in 2017.",
+        "In 2026, Dr. Sasisekharan was elected to the National Academy of Engineering. He was recognized for his groundbreaking contributions to public health and biomedical engineering, including discovering the U.S. heparin contaminant in 2008 and creating clinical antibodies for Zika, dengue, SARS-CoV-2, and other diseases. He received his BS in Physical Sciences from Bangalore University, his MS in Biophysics from Harvard University, and his PhD in Medical Sciences from Harvard Medical School.",
+        "Dr. Sasisekharan has founded several biotechnology companies. These businesses include Momenta Pharamaceuticals (acquired by J&J for USD 6.5 Billion) and Cerulean Pharmaceuticals. Later, he also founded Visterra Inc. (acquired by Otsuka Pharmaceuticals for about USD 0.5 Billion) with a focus on infectious disease therapeutics. He also co-founded Tychan Pte., Ltd. (in Singapore), which was focused on rapid response to infectious diseases.",
+        "Dr. Sasisekharan has been, and remains, a consultant to numerous biotechnology companies as well as serving on the advisory board of biotechnology companies, venture funds, and non-profit institutions involved in translational life-sciences innovations."
       ]
     },
-    sarah: {
-      name: "Sarah Chen, PhD",
-      title: "VP of Biomanufacturing & Supply Chain",
-      department: "Technical Operations",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBfROTHan_QIfyNyN9aKJj6TXgflL_sWmUpkg9qVOUm8aIwmKMrVs5ISOwPzSUKBSpPcaQ8MRfUUA5xoMQoOI4OBlDsGDRAgMs5q5OxehM0WQ3kXI0PQZKGtGAeqUGp0u6bvNe3TtwBzXjjAY--QnzRvLSGJmL_1Uacy_b3XDJTCW5QthTC8AXtgZ6EX7aXMER3u5r3VsInbz10ivUgxQBW6t0NCYu17n5XvM3PnmUGrP3naMjvgPjo1w",
-      bio: [
-        "Dr. Sarah Chen is a biochemical engineer with twelve years of experience optimizing continuous bioprocessing, cleanroom operations, and recombinant protein manufacturing. She previously spearheaded advanced manufacturing platforms at leading global pharmaceutical producers.",
-        "At Tabitha Quest, Dr. Chen oversees the engineering of scalable domestic manufacturing cleanrooms. Her work pioneers novel modular production lines that drastically lower the cost-of-goods for critical biologics, bypassing fragile foreign supply routes and ensuring national therapeutic resilience.",
-        "She completed her PhD in Chemical and Biomolecular Engineering at MIT and has authored over 20 peer-reviewed papers on scalable continuous biomanufacturing."
+    tony: {
+      name: "Anthony Barrueta",
+      title: "Strategy and Policy Advisor",
+      department: "Policy & Strategy Advisory",
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuD3JSMvuZW9vd4BS-0gEXZp-t9JBJ5SjWu6bw2l7XbxrJGu_IgOaAOceVRrqTpZYKEgIe3V6gDvEkHjyBZ2j2AwrYm21SxcMzsm7gFLqBVqoZLAMWYFQPxTPH1rW4_DgNZQwDafeaGcSLJVmSwLMQz4Z5dJqx6r5ZhRF9OKXSS3982HX92yteU7CjsInwf5-ELzkSTbq20e7wEyd-GEaiF21ndAlAyn0RQUHLL3XSiM7HnSr9YQZhUjG-wI3L1Pdkq5Xtc",
+      paragraphs: [
+        "Tony Barrueta is principal of The Barrueta Group, a public policy and leadership advisory firm. He previously served as senior vice president of government relations at Kaiser Permanente, where he led national public policy and advocacy strategy for the nation's largest nonprofit integrated health care system and served on its national executive team.",
+        "Over a 31-year career at Kaiser Permanente, he held senior legal and policy roles, including as chair of the organization's Health Policy Committee, and advanced its positions on Medicare, insurance regulation, prescription drug policy, and health reform.",
+        "He has extensive governance experience, including serving as chair of the board of the Public Health Institute and as a long-standing board member of the Alliance of Community Health Plans. He has also served on the boards of the Health Care Transformation Task Force, Enroll America, the East Bay Agency for Children, and Kaiser Foundation Health Plan of the Mid-Atlantic States, and he currently participates on Public Policy Institute of California's Statewide Leadership Council. He received his undergraduate degree from Boston College and his law degree from the University of Texas at Austin. Tony is based in Berkeley, CA and Washington, DC."
+      ]
+    },
+    lee: {
+      name: "Lee Hofrichter",
+      title: "Growth and Revenue Advisor",
+      department: "Growth & Revenue Advisory",
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuC3Db0KcBDvfSx9p-d2p0uD1kGTovVKGh-BQBQ2_1forXlr-m9vEbgfbj5KoVnmlf0M0opLE-nQsTZ53_51E-b4A8IT5ohPe_ve8-bgt-MSfL2FTxBkLMbMUeODUd6oSZIdly32j7G5ehBOIp3LrZBBIVEx796eZ7tNGILXFLGPMeg0hHmIEmlVSb_jfbsypuT34iyZeaDTOQUI15vNihMnR91cM10Pw63QkRQlFPQeJEZrOUp8ccdTwm9AHP9XBzH9Gdw",
+      paragraphs: [
+        "Lee Hofrichter brings more than 15 years of nonprofit development experience, including extensive work in healthcare philanthropy as a strategic consultant with CCS Fundraising, one of the nation's leading development consulting firms. Lee has led fundraising strategy and execution of a three-year, $100M campaign for an innovative cancer research foundation, and supported major gifts and campaign work for leading hospital systems and academic medical centers.",
+        "He also served as Vice President of Development at YouthBuild Global, where he rebuilt the organization's development function and grew revenue across individual, corporate, foundation, and government funding sources.",
+        "Lee holds the Certified Fund Raising Executive (CFRE) credential and an MBA from NYU Stern School of Business, with specializations in Strategy, Corporate Finance, and Social Innovation & Impact."
       ]
     }
   };
 
   function openBioModal(id) {
-    const member = teamData[id];
-    if (!member) return;
-
-    document.getElementById('modalImage').src = member.image;
-    document.getElementById('modalImage').alt = member.name;
-    document.getElementById('modalName').textContent = member.name;
-    document.getElementById('modalTitle').textContent = member.title;
-    document.getElementById('modalDepartment').textContent = member.department;
-
-    const bioContainer = document.getElementById('modalBio');
-    bioContainer.innerHTML = member.bio.map(p => `<p>${p}</p>`).join('');
+    const data = teamBios[id];
+    if (!data) return;
 
     const modal = document.getElementById('bioModal');
+    const modalImage = document.getElementById('modalImage');
+    const modalName = document.getElementById('modalName');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDepartment = document.getElementById('modalDepartment');
+    const modalBio = document.getElementById('modalBio');
+
+    modalImage.src = data.image;
+    modalImage.alt = data.name;
+    modalName.textContent = data.name;
+    modalTitle.textContent = data.title;
+    modalDepartment.textContent = data.department;
+
+    modalBio.innerHTML = data.paragraphs.map(p => `<p>${p}</p>`).join('');
+
     modal.classList.remove('opacity-0', 'pointer-events-none');
     modal.classList.add('opacity-100', 'pointer-events-auto');
-    const content = modal.querySelector('.transform');
-    content.classList.remove('scale-95');
-    content.classList.add('scale-100');
-    document.body.style.overflow = 'hidden';
+    modal.setAttribute('aria-hidden', 'false');
+
+    const card = modal.querySelector('.relative.bg-white');
+    if (card) {
+      card.classList.remove('scale-95');
+      card.classList.add('scale-100');
+      card.scrollTop = 0;
+    }
+    document.body.classList.add('modal-open');
   }
 
   function closeBioModal() {
     const modal = document.getElementById('bioModal');
-    modal.classList.remove('opacity-100', 'pointer-events-auto');
+    if (!modal) return;
+
     modal.classList.add('opacity-0', 'pointer-events-none');
-    const content = modal.querySelector('.transform');
-    content.classList.remove('scale-100');
-    content.classList.add('scale-95');
-    document.body.style.overflow = '';
+    modal.classList.remove('opacity-100', 'pointer-events-auto');
+    modal.setAttribute('aria-hidden', 'true');
+
+    const card = modal.querySelector('.relative.bg-white');
+    if (card) {
+      card.classList.add('scale-95');
+      card.classList.remove('scale-100');
+    }
+    document.body.classList.remove('modal-open');
   }
 
+  // Keyboard accessibility: ESC key to close modal
   document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
       closeBioModal();
     }
   });
 </script>
-
-
-
-
-
-
-</body></html>
+</body>
+</html>
